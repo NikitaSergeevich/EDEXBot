@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a59a8ab8-5c11-45ef-b0b4-5bc3e3f16201" name="Default" comment="" />
+    <list default="true" id="a59a8ab8-5c11-45ef-b0b4-5bc3e3f16201" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.BlockchainHack/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.BlockchainHack/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,21 +13,21 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ValuesController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlockchainHack/Controllers/ValuesController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="165">
               <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding>
-                <marker date="1498904401753" expanded="true" signature="6:128" ph="..." />
-                <marker date="1498904401753" expanded="true" signature="166:922" ph="{...}" />
-                <marker date="1498904401753" expanded="true" signature="247:920" ph="{...}" />
-                <marker date="1498904401753" expanded="true" signature="338:412" ph="{...}" />
-                <marker date="1498904401753" expanded="true" signature="501:549" ph="{...}" />
-                <marker date="1498904401753" expanded="true" signature="646:666" ph="{...}" />
-                <marker date="1498904401753" expanded="true" signature="778:798" ph="{...}" />
-                <marker date="1498904401753" expanded="true" signature="894:914" ph="{...}" />
+                <marker date="1498994416000" expanded="false" signature="6:128" ph="..." />
+                <marker date="1498994416000" expanded="true" signature="166:922" ph="{...}" />
+                <marker date="1498994416000" expanded="true" signature="247:920" ph="{...}" />
+                <marker date="1498994416000" expanded="true" signature="338:412" ph="{...}" />
+                <marker date="1498994416000" expanded="true" signature="501:549" ph="{...}" />
+                <marker date="1498994416000" expanded="true" signature="646:666" ph="{...}" />
+                <marker date="1498994416000" expanded="true" signature="778:798" ph="{...}" />
+                <marker date="1498994416000" expanded="true" signature="894:914" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -34,31 +36,68 @@
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlockchainHack/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="125" column="67" lean-forward="false" selection-start-line="125" selection-start-column="67" selection-end-line="125" selection-end-column="67" />
+            <state relative-caret-position="411">
+              <caret line="204" column="50" lean-forward="true" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
               <folding>
-                <marker date="1498922150137" expanded="true" signature="7:479" ph="..." />
-                <marker date="1498922150137" expanded="true" signature="505:5465" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="532:5463" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="722:1651" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="756:1013" ph="/* var host = new WebHostBuilder() ... */" />
-                <marker date="1498922150137" expanded="true" signature="1766:1816" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="1957:2102" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="2228:3508" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="2327:3359" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="2391:2839" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="2700:2821" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="2904:3345" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="3209:3327" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="3614:5139" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="3757:4198" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="3820:3897" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="3961:4039" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="4103:4180" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="4398:4545" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="4691:4847" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="4923:5129" ph="{...}" />
-                <marker date="1498922150137" expanded="true" signature="5275:5457" ph="{...}" />
+                <marker date="1498996029000" expanded="false" signature="7:591" ph="..." />
+                <marker date="1498996029000" expanded="true" signature="617:11877" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="644:11875" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="1351:2331" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="1374:1631" ph="/* var host = new WebHostBuilder() ... */" />
+                <marker date="1498996029000" expanded="true" signature="2446:2496" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="2637:2782" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="2908:2974" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="3154:7936" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="3297:3738" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="3360:3437" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="3501:3579" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="3643:3720" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="4045:4130" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="4205:4280" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="4470:4672" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="4818:5378" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="5561:6317" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="6533:7771" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="6785:7061" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="6855:7038" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="7423:7613" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="8060:11869" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="8292:8538" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="8354:8519" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="8714:8781" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="8890:11507" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="9105:11341" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="9127:9342" ph="/* Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED) ... */" />
+                <marker date="1498996029000" expanded="true" signature="9438:9585" ph="/* apiBlockChain.createDeal(mainContractAdress,md5.ComputeHash(d.FileStream).ToString(), ... */" />
+                <marker date="1498996029000" expanded="true" signature="9794:10956" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="9931:10545" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="10589:10934" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="11341:11493" ph="{...}" />
+                <marker date="1498996029000" expanded="true" signature="11577:11859" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiBlockChain.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockchainHack/ApiBlockChain.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="41" column="67" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="41" selection-end-column="67" />
+              <folding>
+                <marker date="1498995282000" expanded="false" signature="6:174" ph="..." />
+                <marker date="1498995282000" expanded="true" signature="205:22180" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="238:22178" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="489:820" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="570:711" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="855:20091" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="20234:20807" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="20479:20734" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="20933:21468" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="21170:21395" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="21477:21591" ph="/* подождать транзакцию ... */" />
+                <marker date="1498995282000" expanded="true" signature="21689:22172" ph="{...}" />
+                <marker date="1498995282000" expanded="true" signature="21944:22055" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -67,16 +106,9 @@
       <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlockchainHack/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1498904401887" expanded="false" signature="6:294" ph="..." />
-                <marker date="1498904401887" expanded="true" signature="320:1492" ph="{...}" />
-                <marker date="1498904401887" expanded="true" signature="347:1490" ph="{...}" />
-                <marker date="1498904401887" expanded="true" signature="401:789" ph="{...}" />
-                <marker date="1498904401887" expanded="true" signature="1016:1106" ph="{...}" />
-                <marker date="1498904401887" expanded="true" signature="1324:1484" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,10 +118,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1498904352239" expanded="true" signature="15:99" ph="{...}" />
-                <marker date="1498904352239" expanded="true" signature="61:95" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,6 +130,7 @@
       <find>OnInlineQuery</find>
       <find>BotOnMessageReceived</find>
       <find>BotOnInlineQueryReceived</find>
+      <find>magic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,6 +139,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/BlockchainHack/ApiBlockChain.cs" />
         <option value="$PROJECT_DIR$/BlockchainHack/Program.cs" />
       </list>
     </option>
@@ -120,10 +151,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -186,6 +215,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,6 +266,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -284,11 +324,34 @@
       <option name="presentableId" value="Default" />
       <updated>1498904355285</updated>
       <workItem from="1498904360790" duration="14101000" />
+      <workItem from="1498994418456" duration="2096000" />
     </task>
+    <task id="LOCAL-00001" summary="api blockchain">
+      <created>1498996047229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1498996047229</updated>
+    </task>
+    <task id="LOCAL-00002" summary="api blockchain">
+      <created>1498996126817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1498996126817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="api blockchain">
+      <created>1498996657343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1498996657343</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14101000" />
+    <option name="totallyTimeSpent" value="16197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,28 +363,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39274448" sideWeight="0.2591508" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39274448" sideWeight="0.7408492" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36851212" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3678619" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39274448" sideWeight="0.7408492" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5086321" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -331,6 +395,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="api blockchain" />
+    <option name="LAST_COMMIT_MESSAGE" value="api blockchain" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -338,76 +406,178 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BlockchainHack/appsettings.json">
+    <entry file="file://$PROJECT_DIR$/BlockchainHack/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <marker date="1498904352239" expanded="true" signature="15:99" ph="{...}" />
-            <marker date="1498904352239" expanded="true" signature="61:95" ph="{...}" />
+            <marker date="1498994416000" expanded="false" signature="6:128" ph="..." />
+            <marker date="1498994416000" expanded="true" signature="166:922" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="247:920" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="338:412" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="501:549" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="646:666" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="778:798" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="894:914" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlockchainHack/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockchainHack/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockchainHack/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" column="45" lean-forward="true" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
           <folding>
-            <marker date="1498904401887" expanded="false" signature="6:294" ph="..." />
-            <marker date="1498904401887" expanded="true" signature="320:1492" ph="{...}" />
-            <marker date="1498904401887" expanded="true" signature="347:1490" ph="{...}" />
-            <marker date="1498904401887" expanded="true" signature="401:789" ph="{...}" />
-            <marker date="1498904401887" expanded="true" signature="1016:1106" ph="{...}" />
-            <marker date="1498904401887" expanded="true" signature="1324:1484" ph="{...}" />
+            <marker date="1498996029000" expanded="false" signature="7:591" ph="..." />
+            <marker date="1498996029000" expanded="true" signature="617:11877" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="644:11875" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="1351:2331" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="1374:1631" ph="/* var host = new WebHostBuilder() ... */" />
+            <marker date="1498996029000" expanded="true" signature="2446:2496" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="2637:2782" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="2908:2974" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3154:7936" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3297:3738" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3360:3437" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3501:3579" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3643:3720" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4045:4130" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4205:4280" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4470:4672" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4818:5378" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="5561:6317" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="6533:7771" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="6785:7061" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="6855:7038" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="7423:7613" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8060:11869" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8292:8538" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8354:8519" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8714:8781" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8890:11507" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="9105:11341" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="9127:9342" ph="/* Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED) ... */" />
+            <marker date="1498996029000" expanded="true" signature="9438:9585" ph="/* apiBlockChain.createDeal(mainContractAdress,md5.ComputeHash(d.FileStream).ToString(), ... */" />
+            <marker date="1498996029000" expanded="true" signature="9794:10956" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="9931:10545" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="10589:10934" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="11341:11493" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="11577:11859" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockchainHack/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockchainHack/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlockchainHack/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="165">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <marker date="1498904401753" expanded="true" signature="6:128" ph="..." />
-            <marker date="1498904401753" expanded="true" signature="166:922" ph="{...}" />
-            <marker date="1498904401753" expanded="true" signature="247:920" ph="{...}" />
-            <marker date="1498904401753" expanded="true" signature="338:412" ph="{...}" />
-            <marker date="1498904401753" expanded="true" signature="501:549" ph="{...}" />
-            <marker date="1498904401753" expanded="true" signature="646:666" ph="{...}" />
-            <marker date="1498904401753" expanded="true" signature="778:798" ph="{...}" />
-            <marker date="1498904401753" expanded="true" signature="894:914" ph="{...}" />
+            <marker date="1498994416000" expanded="false" signature="6:128" ph="..." />
+            <marker date="1498994416000" expanded="true" signature="166:922" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="247:920" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="338:412" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="501:549" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="646:666" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="778:798" ph="{...}" />
+            <marker date="1498994416000" expanded="true" signature="894:914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockchainHack/ApiBlockChain.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="41" column="67" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="41" selection-end-column="67" />
+          <folding>
+            <marker date="1498995282000" expanded="false" signature="6:174" ph="..." />
+            <marker date="1498995282000" expanded="true" signature="205:22180" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="238:22178" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="489:820" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="570:711" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="855:20091" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="20234:20807" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="20479:20734" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="20933:21468" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="21170:21395" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="21477:21591" ph="/* подождать транзакцию ... */" />
+            <marker date="1498995282000" expanded="true" signature="21689:22172" ph="{...}" />
+            <marker date="1498995282000" expanded="true" signature="21944:22055" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlockchainHack/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="125" column="67" lean-forward="false" selection-start-line="125" selection-start-column="67" selection-end-line="125" selection-end-column="67" />
+        <state relative-caret-position="411">
+          <caret line="204" column="50" lean-forward="true" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
           <folding>
-            <marker date="1498922150137" expanded="true" signature="7:479" ph="..." />
-            <marker date="1498922150137" expanded="true" signature="505:5465" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="532:5463" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="722:1651" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="756:1013" ph="/* var host = new WebHostBuilder() ... */" />
-            <marker date="1498922150137" expanded="true" signature="1766:1816" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="1957:2102" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="2228:3508" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="2327:3359" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="2391:2839" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="2700:2821" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="2904:3345" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="3209:3327" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="3614:5139" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="3757:4198" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="3820:3897" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="3961:4039" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="4103:4180" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="4398:4545" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="4691:4847" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="4923:5129" ph="{...}" />
-            <marker date="1498922150137" expanded="true" signature="5275:5457" ph="{...}" />
+            <marker date="1498996029000" expanded="false" signature="7:591" ph="..." />
+            <marker date="1498996029000" expanded="true" signature="617:11877" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="644:11875" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="1351:2331" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="1374:1631" ph="/* var host = new WebHostBuilder() ... */" />
+            <marker date="1498996029000" expanded="true" signature="2446:2496" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="2637:2782" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="2908:2974" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3154:7936" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3297:3738" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3360:3437" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3501:3579" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="3643:3720" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4045:4130" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4205:4280" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4470:4672" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="4818:5378" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="5561:6317" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="6533:7771" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="6785:7061" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="6855:7038" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="7423:7613" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8060:11869" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8292:8538" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8354:8519" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8714:8781" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="8890:11507" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="9105:11341" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="9127:9342" ph="/* Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED) ... */" />
+            <marker date="1498996029000" expanded="true" signature="9438:9585" ph="/* apiBlockChain.createDeal(mainContractAdress,md5.ComputeHash(d.FileStream).ToString(), ... */" />
+            <marker date="1498996029000" expanded="true" signature="9794:10956" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="9931:10545" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="10589:10934" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="11341:11493" ph="{...}" />
+            <marker date="1498996029000" expanded="true" signature="11577:11859" ph="{...}" />
           </folding>
         </state>
       </provider>
