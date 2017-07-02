@@ -29,6 +29,13 @@ According to market research, TAM of the market is 6 billion dollars. SAM is 2 b
 
 We decided to use dot.net core as it allows to develop cross-platform solutions, has good library to communicate with blockchain, allows to produce scalable enterprise solutions
 
-
 ## What was the biggest obstacle that your team overcome?
 In almost 48 hours we managed to run prototype of the system. System allows to upload document, sign it and notify counterparty
+
+## How to run the project
+1. Install Rider: https://www.jetbrains.com/rider/download/
+2. Check that you have .Net Core https://www.microsoft.com/net/download/core
+3. Install NuGet dependencies https://www.nuget.org/packages/TelegramBotClient/
+4. Start the server run -> run default
+5. Go to telegram mobile app and find bot: t.me/edexbot
+6. Follow instructions :)
