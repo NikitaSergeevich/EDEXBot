@@ -6,8 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
- using Microsoft.CodeAnalysis.CSharp.Syntax;
- using Telegram.Bot;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Telegram.Bot;
 using Telegram.Bot.Args;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
@@ -25,8 +25,14 @@ namespace BlockchainHack
 
         static Dictionary<long, Dictionary<String, List<Telegram.Bot.Types.Contact>>> contactsdict = new Dictionary<long, Dictionary<String, List<Telegram.Bot.Types.Contact>>>();
         static Dictionary<long, string> statedict = new Dictionary<long, string>();
+        static Dictionary<long, string> tg_bc_dict = new Dictionary<long, string>();
         static Dictionary<long, Document> docnamedict = new Dictionary<long, Document>();
         
+        static List<string> blockchainpublickeys = new List<string>() 
+        {
+            "0x3e165d74b72bc6848329ff8ddf678ac19ec1a139",
+            "0x521a2561b4eb3fda1c6af94bbf130aae23ed2765"
+        };
         public static void Main(string[] args)
         {
             /*var host = new WebHostBuilder()
