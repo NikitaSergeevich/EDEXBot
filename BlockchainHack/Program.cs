@@ -118,6 +118,7 @@ namespace BlockchainHack
                 contactsdict[tgid] = new Dictionary<string, List<Contact>>();
                 await Bot.SendTextMessageAsync(messageEventArgs.Message.Chat.Id, "Now upload file you want to sign", false, false, 0, null);
             } else if (messageEventArgs.Message.Type.Equals(MessageType.DocumentMessage) && 
+                       statedict.ContainsKey(tgid) &&
                        statedict[tgid] == "init"){
                 Console.WriteLine("Document received from " + tgid);
                 
@@ -134,7 +135,8 @@ namespace BlockchainHack
                 await Bot.SendTextMessageAsync(messageEventArgs.Message.Chat.Id, "Document for sign: " + docname + ". Please select document signers by phone number from your contact list", false, false, 0, null );
                 
             } else if (messageEventArgs.Message.Type.Equals(MessageType.ContactMessage) && 
-                       statedict[tgid] == "uploaded" || statedict[tgid] == "set")
+                       statedict.ContainsKey(tgid) &&
+                       (statedict[tgid] == "uploaded" || statedict[tgid] == "set"))
             {
                 // Keyboard with one button for sender sign
                 var keyboard = new Telegram.Bot.Types.ReplyMarkups.InlineKeyboardMarkup(
@@ -182,7 +184,7 @@ namespace BlockchainHack
             
             long tgid = callbackQueryEventArgs.CallbackQuery.From.Id;
             Document d = null;
-            if (docnamedict[tgid] != null)
+            if (docnamedict.ContainsKey(tgid))
             {
                 d = docnamedict[tgid];
             }
@@ -191,22 +193,31 @@ namespace BlockchainHack
             if(callbackQueryEventArgs.CallbackQuery.Data == "sendtosigncallback") {
                 //await Bot.AnswerCallbackQueryAsync(callbackQueryEventArgs.CallbackQuery.Id, "You hav choosen " + callbackQueryEventArgs.CallbackQuery.Data, true);
                 
-                // Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED)
-                
-                for (var i = 0; i < contactsdict[tgid][d.FileName].Count; i++)
-                {
-                    Contact c = contactsdict[tgid][docnamedict[tgid].FileName][i];
-                    await Bot.SendTextMessageAsync(c.UserId, "Hey, you have new document for sign from" + c.FirstName + " " + c.LastName, false, false, 0, null);
-                    Console.WriteLine("Send document to" + c.FirstName + " " + c.LastName);
-                    await Bot.SendDocumentAsync(c.UserId, d.FileId, "", false, 0, keyboard);
-                }
-                
                 if (d != null) {
+                    // Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED)
+                    await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed and send to", false, false, 0,null);
+                    for (var i = 0; i < contactsdict[tgid][d.FileName].Count; i++)
+                    {
+                        Contact c = contactsdict[tgid][docnamedict[tgid].FileName][i];
+                        try
+                        {
+                           await Bot.SendTextMessageAsync(c.UserId, "Hey, you have new document for sign from " + callbackQueryEventArgs.CallbackQuery.From.FirstName + " " + callbackQueryEventArgs.CallbackQuery.From.LastName, false, false, 0, null);
+                           await Bot.SendDocumentAsync(c.UserId, d.FileId, "", false, 0, keyboard);
+                           await Bot.SendTextMessageAsync(tgid, c.FirstName + c.LastName, false, false, 0,null);
+                           Console.WriteLine("Send document to" + c.FirstName + " " + c.LastName);
+                        }
+                        catch (Exception e)
+                        {
+                            await Bot.SendTextMessageAsync(tgid, "We couldn't send document to " + c.FirstName + c.LastName, false, false, 0,null);
+                            Console.WriteLine("Couldn't send document to" + c.FirstName + " " + c.LastName);
+                            return;
+                        }
+                    }
+                    await Bot.AnswerCallbackQueryAsync(callbackQueryEventArgs.CallbackQuery.Id);
                     //Clean data and say success this to user
                     statedict[tgid] = "init";
                     docnamedict = new Dictionary<long, Document>();
                     contactsdict = new Dictionary<long, Dictionary<string, List<Contact>>>();
-                    await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed and send", false, false, 0,null);
                 }
                 else {
                     await Bot.SendTextMessageAsync(tgid, "Document is already signed", false, false, 0, null);
@@ -214,6 +225,7 @@ namespace BlockchainHack
             } else if (callbackQueryEventArgs.CallbackQuery.Data == "signcallback"){
                 // Send request the magic blockchain endpoint
                 await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed", false, false, 0, null );
+                await Bot.AnswerCallbackQueryAsync(callbackQueryEventArgs.CallbackQuery.Id);
             }
         }
     }
