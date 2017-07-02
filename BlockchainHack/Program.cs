@@ -209,8 +209,9 @@ namespace BlockchainHack
                     //String url, String senderAdress, String recipientAdress
                     var md5 = MD5.Create();
                     md5.ComputeHash(d.FileStream);
-//                    apiBlockChain.createDeal(mainContractAdress,md5.ComputeHash(d.FileStream).ToString(),
-//                        d.FilePath,);
+                    apiBlockChain.unlockAccount(mainContractAdress, "123");
+                    var l = apiBlockChain.createDeal(mainContractAdress, md5.ComputeHash(d.FileStream).ToString(), d.FilePath, "0x3e165d74b72bc6848329ff8ddf678ac19ec1a139", "0x521a2561b4eb3fda1c6af94bbf130aae23ed2765");
+                    Console.WriteLine(l);
                     await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed and send to", false, false, 0,null);
                     for (var i = 0; i < contactsdict[tgid][d.FileName].Count; i++)
                     {
