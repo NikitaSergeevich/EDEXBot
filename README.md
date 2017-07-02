@@ -21,11 +21,11 @@ According to market research, TAM of the market is 6 billion dollars. SAM is 2 b
 
 
 ## What tools do you use
--Ethereum smart contracts
--Geth
--Microsoft Azure
--Telegram Bot api
--Dot.Net Core
+*Ethereum smart contracts
+*Geth
+*Microsoft Azure
+*Telegram Bot api
+*Dot.Net Core
 
 We decided to use dot.net core as it allows to develop cross-platform solutions, has good library to communicate with blockchain, allows to produce scalable enterprise solutions
 
