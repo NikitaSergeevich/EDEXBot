@@ -1,8 +1,8 @@
 # EDEXBot
 Telegram Bot for signing documents.
 
-Team Name: Inno Team
-Project Name: EDEX
+#### Team Name: Inno Team
+#### Project Name: EDEX
 
 Summary of the project
 
