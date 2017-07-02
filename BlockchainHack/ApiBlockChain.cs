@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 using System.Threading.Tasks;
 using Nethereum.Hex.HexTypes;
+using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
 namespace ConsoleApplication1
@@ -24,7 +26,7 @@ namespace ConsoleApplication1
             }).GetAwaiter().GetResult();
 
             Console.WriteLine(resultUnlock);
-            return false;
+            return resultUnlock;
         }
 
         public void inizialWeb3()
@@ -38,8 +40,8 @@ namespace ConsoleApplication1
             web3 = web3temp;
         }
 
-        public String createDeal(String contractAddress, String docHash,
-            String url, String senderAdress, String recipientAdress)
+        public string createDeal(String contractAddress, string docHash,
+            string url, string senderAdress, string recipientAdress)
         {
             var contract = web3.Eth.GetContract(abi, contractAddress);
             var createSertificationCentrFunction = contract.GetFunction("createSmartDeal");
@@ -89,6 +91,23 @@ namespace ConsoleApplication1
             
             Console.WriteLine( result);
             return result;
+        }
+
+
+        public String waitAddressAccount(String transactionHash)
+        {
+            TransactionReceipt receipt = null;
+            while (receipt == null)
+            {
+                Thread.Sleep(5000);
+                Task.Run(async () =>
+                {
+                    receipt = await web3.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
+             
+                }).GetAwaiter().GetResult();
+                
+            }
+            return receipt.ContractAddress;
         }
     }
 }

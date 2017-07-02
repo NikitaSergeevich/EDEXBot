@@ -9,7 +9,8 @@ using System.Linq;
  using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Telegram.Bot;
+ using Nethereum.RLP;
+ using Telegram.Bot;
 using Telegram.Bot.Args;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
@@ -29,7 +30,7 @@ namespace BlockchainHack
         static Dictionary<long, Dictionary<String, List<Telegram.Bot.Types.Contact>>> contactsdict = new Dictionary<long, Dictionary<String, List<Telegram.Bot.Types.Contact>>>();
         static Dictionary<long, string> statedict = new Dictionary<long, string>();
         static Dictionary<long, string> tg_bc_dict = new Dictionary<long, string>();
-        static Dictionary<long, Document> docnamedict = new Dictionary<long, Document>();
+        static Dictionary<long, Document> documentNameDictionary = new Dictionary<long, Document>();
         
         static List<string> blockchainpublickeys = new List<string>() 
         {
@@ -122,7 +123,7 @@ namespace BlockchainHack
                        messageEventArgs.Message.Text.Equals("Upload")){
                 Console.WriteLine(tgid + "Want to upload");
                 statedict[tgid] = "init";
-                docnamedict = new Dictionary<long, Document>();
+                documentNameDictionary = new Dictionary<long, Document>();
                 contactsdict = new Dictionary<long, Dictionary<string, List<Contact>>>();
                 //Set empty / clear contact list for client with tgid
                 contactsdict[tgid] = new Dictionary<string, List<Contact>>();
@@ -134,7 +135,7 @@ namespace BlockchainHack
                 
                 //Update Data
                 statedict[tgid] = "uploaded";
-                docnamedict[tgid] = messageEventArgs.Message.Document;
+                documentNameDictionary[tgid] = messageEventArgs.Message.Document;
                 
                 //
                 Dictionary<string, List<Contact>> dict = new Dictionary<string, List<Contact>>();
@@ -162,12 +163,12 @@ namespace BlockchainHack
                 
                 // Update client state and add new contact
                 statedict[tgid] = "set";
-                contactsdict[tgid][docnamedict[tgid].FileName].Add(contact);
+                contactsdict[tgid][documentNameDictionary[tgid].FileName].Add(contact);
 
                 string res = "Document signers: \n";
-                for (var i = 0; i < contactsdict[tgid][docnamedict[tgid].FileName].Count; i++)
+                for (var i = 0; i < contactsdict[tgid][documentNameDictionary[tgid].FileName].Count; i++)
                 {
-                    Contact c = contactsdict[tgid][docnamedict[tgid].FileName][i];
+                    Contact c = contactsdict[tgid][documentNameDictionary[tgid].FileName][i];
                     res = res + c.FirstName + " " + c.LastName + "\n";
                 }
                 
@@ -178,6 +179,13 @@ namespace BlockchainHack
             }
         }
 
+        private static byte[] GetBytes(string str)
+        {
+            byte[] bytes = new byte[str.Length * sizeof(char)];
+            System.Buffer.BlockCopy(str.ToCharArray(), 0, bytes, 0, bytes.Length);
+            return bytes;
+        }
+        
         private static async void BotOnCallbackQueryReceived(object sender, CallbackQueryEventArgs callbackQueryEventArgs)
         {
             // Keyboard with one button for sender sign
@@ -193,33 +201,36 @@ namespace BlockchainHack
             );
             
             long tgid = callbackQueryEventArgs.CallbackQuery.From.Id;
-            Document d = null;
-            if (docnamedict.ContainsKey(tgid))
+            Document document = null;
+            if (documentNameDictionary.ContainsKey(tgid))
             {
-                d = docnamedict[tgid];
+                document = documentNameDictionary[tgid];
             }
             
             
             if(callbackQueryEventArgs.CallbackQuery.Data == "sendtosigncallback") {
                 //await Bot.AnswerCallbackQueryAsync(callbackQueryEventArgs.CallbackQuery.Id, "You hav choosen " + callbackQueryEventArgs.CallbackQuery.Data, true);
                 
-                if (d != null) {
+                if (document != null) {
                     // Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED)
                     //String contractAddress, String docHash,
                     //String url, String senderAdress, String recipientAdress
                     var md5 = MD5.Create();
-                    md5.ComputeHash(d.FileStream);
-                    apiBlockChain.unlockAccount(mainContractAdress, "123");
-                    var l = apiBlockChain.createDeal(mainContractAdress, md5.ComputeHash(d.FileStream).ToString(), d.FilePath, "0x3e165d74b72bc6848329ff8ddf678ac19ec1a139", "0x521a2561b4eb3fda1c6af94bbf130aae23ed2765");
+                    apiBlockChain.inizialWeb3();
+                    var s =apiBlockChain.unlockAccount("0x3effa2d36eb2e09772f4195b89c6d11c322d626b", "123");
+                    Console.WriteLine("account is lock: "+s);
+                    var l = apiBlockChain.createDeal("0x6bff537405237294a5e786fda1fa8ea315e17b58","text1","texturl","0x3e165d74b72bc6848329ff8ddf678ac19ec1a139","0x3e165d74b72bc6848329ff8ddf678ac19ec1a139");
                     Console.WriteLine(l);
-                    await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed and send to", false, false, 0,null);
-                    for (var i = 0; i < contactsdict[tgid][d.FileName].Count; i++)
+                    var adressDealContract=apiBlockChain.waitAddressAccount(l);
+                    Console.WriteLine("adressContract"+adressDealContract);
+                    await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed and send to: ", false, false, 0,null);
+                    for (var i = 0; i < contactsdict[tgid][document.FileName].Count; i++)
                     {
-                        Contact c = contactsdict[tgid][docnamedict[tgid].FileName][i];
+                        Contact c = contactsdict[tgid][documentNameDictionary[tgid].FileName][i];
                         try
                         {
-                           await Bot.SendTextMessageAsync(c.UserId, "Hey, you have new document for sign from " + callbackQueryEventArgs.CallbackQuery.From.FirstName + " " + callbackQueryEventArgs.CallbackQuery.From.LastName, false, false, 0, null);
-                           await Bot.SendDocumentAsync(c.UserId, d.FileId, "", false, 0, keyboard);
+                           await Bot.SendTextMessageAsync(c.UserId, "Hey, you have new document for sign from: " + callbackQueryEventArgs.CallbackQuery.From.FirstName + " " + callbackQueryEventArgs.CallbackQuery.From.LastName, false, false, 0, null);
+                           await Bot.SendDocumentAsync(c.UserId, document.FileId, "", false, 0, keyboard);
                            await Bot.SendTextMessageAsync(tgid, c.FirstName + c.LastName, false, false, 0,null);
                            Console.WriteLine("Send document to" + c.FirstName + " " + c.LastName);
                         }
@@ -233,7 +244,7 @@ namespace BlockchainHack
                     await Bot.AnswerCallbackQueryAsync(callbackQueryEventArgs.CallbackQuery.Id);
                     //Clean data and say success this to user
                     statedict[tgid] = "init";
-                    docnamedict = new Dictionary<long, Document>();
+                    documentNameDictionary = new Dictionary<long, Document>();
                     contactsdict = new Dictionary<long, Dictionary<string, List<Contact>>>();
                 }
                 else {
