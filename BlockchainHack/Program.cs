@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+ using System.Security.Cryptography;
+ using System.Threading.Tasks;
+ using ConsoleApplication1;
+ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
  using Microsoft.CodeAnalysis.CSharp.Syntax;
  using Telegram.Bot;
@@ -20,7 +22,8 @@ namespace BlockchainHack
 {
     public class Program
     {
-        
+        static ApiBlockChain apiBlockChain = new ApiBlockChain();
+        private static string mainContractAdress = "0x6bff537405237294a5e786fda1fa8ea315e17b58";
         private static readonly TelegramBotClient Bot = new TelegramBotClient("408098530:AAGKKN-C7R2wbLcIqE0T17v7RZeNO25I8fQ");
 
         static Dictionary<long, Dictionary<String, List<Telegram.Bot.Types.Contact>>> contactsdict = new Dictionary<long, Dictionary<String, List<Telegram.Bot.Types.Contact>>>();
@@ -37,7 +40,8 @@ namespace BlockchainHack
                 .Build();
 
             host.Run();*/
-            
+//            ApiBlockChain apiBlockChain = new ApiBlockChain();
+            apiBlockChain.inizialWeb3();
             Bot.OnCallbackQuery += BotOnCallbackQueryReceived;
             Bot.OnMessage += BotOnMessageReceived;
             Bot.OnMessageEdited += BotOnMessageReceived;
@@ -195,6 +199,12 @@ namespace BlockchainHack
                 
                 if (d != null) {
                     // Send to the magic blockchain endpoint (CAN BE SIGNED AND ALREADY SIGNED)
+                    //String contractAddress, String docHash,
+                    //String url, String senderAdress, String recipientAdress
+                    var md5 = MD5.Create();
+                    md5.ComputeHash(d.FileStream);
+//                    apiBlockChain.createDeal(mainContractAdress,md5.ComputeHash(d.FileStream).ToString(),
+//                        d.FilePath,);
                     await Bot.SendTextMessageAsync(tgid, "Document is sucessfully signed and send to", false, false, 0,null);
                     for (var i = 0; i < contactsdict[tgid][d.FileName].Count; i++)
                     {
